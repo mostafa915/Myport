@@ -18,7 +18,10 @@ linksInHeaders.forEach((el) => {
   });
   el.addEventListener("mouseleave", (e) => {
     el.classList.remove("active");
-    linkHomeInHeader.classList.add("active");
+  });
+  el.addEventListener("click", function (e) {
+    barOfHead.classList.remove("click");
   });
 });
 // document.body.addEventListener("mouseleave")
+
