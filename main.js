@@ -1,9 +1,17 @@
 let barOfHead = document.querySelector("header .bar");
 let home = document.querySelector(".home");
+let about = document.querySelector(".about");
+let service = document.querySelector(".services");
 barOfHead.addEventListener("click", function (e) {
   barOfHead.classList.toggle("click");
 });
 home.addEventListener("click", (e) => {
+  barOfHead.classList.remove("click");
+});
+about.addEventListener("click", (e) => {
+  barOfHead.classList.remove("click");
+});
+service.addEventListener("click", (e) => {
   barOfHead.classList.remove("click");
 });
 let linksInHeaders = document.querySelectorAll("header .links li a");
@@ -24,4 +32,5 @@ linksInHeaders.forEach((el) => {
   });
 });
 // document.body.addEventListener("mouseleave")
+
 
