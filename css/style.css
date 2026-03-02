@@ -269,6 +269,11 @@ header i.bar {
   width: fit-content;
   background-color: #0f0f123b;
 }
+@media (max-width: 767px) {
+  .home .experience {
+    margin: 50px auto 0;
+  }
+}
 .home .experience .text {
   padding: 20px;
 }
@@ -387,4 +392,5 @@ header i.bar {
     width: 100%;
   }
 }
+
 
