@@ -46,8 +46,10 @@ ul {
   }
 }
 header {
-  background-color: var(--bg-main);
-  position: relative;
+    background-color: var(--bg-main);
+  position: sticky;
+  top: 0;
+  z-index: 101;
 }
 header .container {
   display: flex;
@@ -385,3 +387,4 @@ header i.bar {
     width: 100%;
   }
 }
+
